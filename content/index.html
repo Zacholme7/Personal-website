@@ -21,17 +21,17 @@
 
 
 			<ul class="nav">
-				<li><a href="#" class="active"><i class="fa fa-home"></i>Home</a></li>
-				<li><a href="#"><i class="fa fa-user"></i>About</a></li>
-				<li><a href="#"><i class="fa fa-briefcase"></i>Portfolio</a></li>
-				<li><a href="#"><i class="fa fa-comments"></i>Contact</a></li>
+				<li><a href="#home" class="active"><i class="fa fa-home"></i>Home</a></li>
+				<li><a href="#about"><i class="fa fa-user"></i>About</a></li>
+				<li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
+				<li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
 			</ul>
 		</div>
 
 		<div class="main-content">
 
 			<!-- Home Section-->
-			<section class="home section hidden">
+			<section class="home section active" id="home">
 				<div class="container">
 					<div class="intro">
 						<img src="../pic/rsz_1zacpic.jpg" alt="profile">
@@ -48,7 +48,7 @@
 			</section>
 
 			<!-- About Section-->
-			<section class="about section hidden">
+			<section class="about section" id="about">
 				<div class="container">
 					<div class="row">
 						<div class="row">
@@ -94,7 +94,7 @@
 
 
 			<!-- Portfolio Section-->
-			<section class="portfolio section">
+			<section class="portfolio section" id="portfolio">
 				<div class="container">
 
 					<div class="row">
@@ -115,6 +115,7 @@
 							<div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia repellat numquam officiis tempore. Alias ea nemo quis est, delectus eveniet facere, quae quisquam rem itaque tenetur repellat ab, possimus voluptas!
 							Animi rerum officiis quasi fuga assumenda, eius eum impedit quaerat inventore nesciunt aperiam voluptatum voluptatem error soluta in, aut modi facere pariatur at quia odio vitae totam saepe. Quam, quos.</div>
 							<div class="tech"><b>Technology:</b> HTML, CSS, Javascript, React</div>
+							<div class="links"><b>Github & Link: </b><a target="_blank" href="https://github.com/Zacholme7/MazeApp ">Repository</a>, <a href="https://everythingmazes.netlify.app/" target="_blank">EverythingMazes</a></div>
 						</div>
 					</div>
 
@@ -123,6 +124,7 @@
 							<div class="heading">Chip-8 Emulator (Python)</div>
 							<div class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil mollitia sint molestias aperiam sunt! Corrupti sint voluptate, harum ducimus eaque officiis ut deleniti velit sequi perspiciatis quas nisi quisquam magnam.</div>
 							<div class="tech"><b>Technology:</b> Python, Pygame</div>
+							<div class="links"><b>Github: </b><a target="_blank" href="https://github.com/Zacholme7/Chip8-Python ">Repository</a></div>
 						</div>
 					</div>
 
@@ -131,6 +133,7 @@
 							<div class="heading">Chip-8 Emulator (Cpp)</div>
 							<div class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis consequuntur sunt sed voluptatum repellat quasi molestiae dicta deserunt illum, dolore inventore est sint, accusamus provident dolorem pariatur facere culpa cum.</div>
 							<div class="tech"><b>Technology:</b> Cpp, SDL2</div>
+							<div class="links"><b>Github: </b><a target="_blank" href="https://github.com/Zacholme7/Chip8-Cpp ">Repository</a></div>
 						</div>
 					</div>
 
@@ -147,7 +150,7 @@
 
 
 			<!-- Contact Section-->
-			<section class="contact section">
+			<section class="contact section" id="contact">
 				<div class="container">
 
 					<div class="row">
@@ -219,5 +222,6 @@
 		</div>
 
 	</div>	
+	<script src="../interactivity/index.js"></script>
 </body>
 </html>
