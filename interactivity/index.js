@@ -1,4 +1,13 @@
 
+window.addEventListener("load", function(){
+	this.document.querySelector(".preloader").classList.add("opacity-0");
+	this.setTimeout(function(){
+		this.document.querySelector(".preloader").style.display="none";
+	}, 1000)
+})
+
+
+
 const nav = document.querySelector(".nav"),
 	  navList = nav.querySelectorAll("li"),
 	  totalNavList=navList.length,
@@ -21,6 +30,10 @@ for(let i =0; i < totalNavList; i++){
 		}
 		this.classList.add("active");
 		showSection(this);
+		
+		if(window.innerWidth < 1200){
+			asideSectionTogglerBtn();
+		}
 	})
 }
 
@@ -32,4 +45,19 @@ function showSection(element){
 	document.querySelector("#" + target).classList.add("active")
 }
 
+
+const navTogglerBtn = document.querySelector(".nav-toggler"),
+	  aside = document.querySelector(".aside");
+
+navTogglerBtn.addEventListener("click", () =>{
+	asideSectionTogglerBtn();
+})
+
+function asideSectionTogglerBtn(){
+	aside.classList.toggle("open")
+	navTogglerBtn.classList.toggle("open")
+	for(let i =0; i < totalSection; i++){
+			allSection[i].classList.toggle("open");
+	}
+}
 	

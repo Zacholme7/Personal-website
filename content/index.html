@@ -10,13 +10,21 @@
 	<title>Document</title>
 </head>
 <body>
+
+	<!-- preloader-->
+	<div class="preloader">
+		<div class="loader"></div>
+	</div>
+
+	<!-- preloader-->
+
 	<div class="main-container">
 
 		<div class="aside">
-
 			<div class="nav-toggler">
 				<span></span>
 			</div>
+			<div class="aside-inner">
 
 
 
@@ -26,6 +34,7 @@
 				<li><a href="#portfolio"><i class="fa fa-briefcase"></i>Portfolio</a></li>
 				<li><a href="#contact"><i class="fa fa-comments"></i>Contact</a></li>
 			</ul>
+			</div>
 		</div>
 
 		<div class="main-content">
@@ -36,12 +45,11 @@
 					<div class="intro">
 						<img src="../pic/rsz_1zacpic.jpg" alt="profile">
 						<h1>Zac Holme</h1>
-						<p>Student</p>
+						<p>Computer Science Aficionado</p>
 						<div class="social-links">
-							<a href="#"><i class="fa fa-github"></i></a>
-							<a href="#"><i class="fa fa-linkedin"></i></a>
-							<a href="#"><i class="fa fa-twitter"></i></a>
-							<a href="#"><i class="fa fa-instagram"></i></a>
+							<a target="_blank" href="https://github.com/Zacholme7"><i class="fa fa-github"></i></a>
+							<a target="_blank" href="https://www.linkedin.com/in/zac-holme-433157208/"><i class="fa fa-linkedin"></i></a>
+							<a target="_blank" href="https://docs.google.com/document/d/e/2PACX-1vS0Ez0C3TuaovcIYuNoz27qPx1MsuyX5qqUXsxrxsxhDoDkhWGbBLHzqBkKZWYLkT1MUUjyOM44wswb/pub"><i class="fa fa-file"></i></a>
 						</div>
 					</div>
 				</div>
@@ -51,10 +59,8 @@
 			<section class="about section" id="about">
 				<div class="container">
 					<div class="row">
-						<div class="row">
-							<div class="section-title padd-15">
-								<h2>About Me</h2>
-							</div>
+						<div class="section-title padd-15">
+							<h2>About Me</h2>
 						</div>
 					</div>
 
@@ -71,24 +77,6 @@
 						</div>
 					</div>
 
-					<div class="row">
-						<div class="personal-info padd-15">
-							<div class="row">
-								<div class="info-item padd-15">
-									<p>Birthday : <span>November 22 2001</span></p>
-								</div>
-								<div class="info-item padd-15">
-									<p>Age : <span>19</span></p>
-								</div>
-								<div class="info-item padd-15">
-									<p>Email : <span>zacholme@gmail.com</span></p>
-								</div>
-								<div class="info-item padd-15">
-									<p>Phone : <span>612-213-8333</span></p>
-								</div>
-							</div>
-						</div>
-					</div>
 				</div>
 			</section>
 
@@ -111,9 +99,14 @@
 
 					<div class="row">
 						<div class="project">
-							<div class="heading">Maze Generator/Pathfinder</div>
-							<div class="info">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia repellat numquam officiis tempore. Alias ea nemo quis est, delectus eveniet facere, quae quisquam rem itaque tenetur repellat ab, possimus voluptas!
-							Animi rerum officiis quasi fuga assumenda, eius eum impedit quaerat inventore nesciunt aperiam voluptatum voluptatem error soluta in, aut modi facere pariatur at quia odio vitae totam saepe. Quam, quos.</div>
+							<div class="heading">Maze Generation/Pathfinding Visualizer</div>
+							<div class="info">
+								<ul class="infoList">
+									<li>A Maze Geneartion/Pathfinding Webapp used to visualize various algorithms</li>
+									<li>Implements 10 different maze generation algorithms and 6 pathfinding algorithms</li>
+									<li>Easy to use UX and visually appealing animations</li>
+								</ul>
+							</div>
 							<div class="tech"><b>Technology:</b> HTML, CSS, Javascript, React</div>
 							<div class="links"><b>Github & Link: </b><a target="_blank" href="https://github.com/Zacholme7/MazeApp ">Repository</a>, <a href="https://everythingmazes.netlify.app/" target="_blank">EverythingMazes</a></div>
 						</div>
@@ -121,21 +114,20 @@
 
 					<div class="row">
 						<div class="project">
-							<div class="heading">Chip-8 Emulator (Python)</div>
-							<div class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nihil mollitia sint molestias aperiam sunt! Corrupti sint voluptate, harum ducimus eaque officiis ut deleniti velit sequi perspiciatis quas nisi quisquam magnam.</div>
-							<div class="tech"><b>Technology:</b> Python, Pygame</div>
+							<div class="heading">Two Chip-8 Emulators</div>
+							<div class="info">
+								<ul class="infoList">
+									<li>Emulated the Chip-8 Architecture</li>
+									<li>Runs Various games such as Tetris or Pong</li>
+									<li>First Emulator built using Python and Pygame</li>
+									<li>Second Emulator built using C++ and SDL2</li>
+								</ul>
+							</div>
+							<div class="tech"><b>Technology:</b> Python, Pygame, C++, SDL2, Visual Studio</div>
 							<div class="links"><b>Github: </b><a target="_blank" href="https://github.com/Zacholme7/Chip8-Python ">Repository</a></div>
 						</div>
 					</div>
 
-					<div class="row">
-						<div class="project">
-							<div class="heading">Chip-8 Emulator (Cpp)</div>
-							<div class="info">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Perferendis consequuntur sunt sed voluptatum repellat quasi molestiae dicta deserunt illum, dolore inventore est sint, accusamus provident dolorem pariatur facere culpa cum.</div>
-							<div class="tech"><b>Technology:</b> Cpp, SDL2</div>
-							<div class="links"><b>Github: </b><a target="_blank" href="https://github.com/Zacholme7/Chip8-Cpp ">Repository</a></div>
-						</div>
-					</div>
 
 
 				</div>
@@ -163,7 +155,7 @@
 						<div class="contact-info-item padd-15">
 							<div class="icon"><i class="fa fa-phone"></i></div>
 							<h4>Call/Text Me</h4>
-							<p>612 213 8333</p>
+							<p>612-213-8333</p>
 						</div>
 
 						<div class="contact-info-item padd-15">
